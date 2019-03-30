@@ -5,9 +5,7 @@ import Layout from '../components/layout'
 import Wrapper from '../components/Wrapper'
 import Hero from '../components/Hero'
 import Article from '../components/Article'
-import PrevNextPost from '../components/PrevNextPost'
 import SEO from '../components/SEO'
-import Disqus from '../components/Disqus'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -40,10 +38,6 @@ class BlogPostTemplate extends React.Component {
           <Article post={post} />
         </Wrapper>
 
-        <Wrapper>
-          <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title} />
-          <PrevNextPost previous={previous} next={next} />
-        </Wrapper>
       </Layout>
     )
   }
