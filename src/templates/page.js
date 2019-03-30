@@ -6,7 +6,6 @@ import Content from '../components/Content'
 import Wrapper from '../components/Wrapper'
 import Hero from '../components/Hero'
 import SEO from '../components/SEO'
-import Disqus from '../components/Disqus'
 
 class Page extends React.Component {
   render() {
@@ -32,14 +31,6 @@ class Page extends React.Component {
           </article>
         </Wrapper>
 
-        {page.frontmatter.disqus && (
-          <Wrapper>
-            <Disqus
-              slug={page.frontmatter.slug}
-              title={page.frontmatter.title}
-            />
-          </Wrapper>
-        )}
       </Layout>
     )
   }
