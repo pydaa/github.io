@@ -5,8 +5,8 @@ const Wrapper = styled.main.attrs({
 })`
   position: relative;
   border-radius: 3px;
-  width: 80%;
-  max-width: 770px;
+  width: 90%;
+  max-width: 1200px;
   border-bottom: 1px solid #ebf2f6;
   word-wrap: break-word;
   background-color: #fff;
